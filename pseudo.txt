@@ -1,0 +1,12 @@
+This project will be a quiz based on a game called "Clash Royale"
+
+1. A list dictionaries of questions and answers
+        Each dictionary will have the question, the list of answers, and the correct answer
+Store score variable
+User answer variable
+2. CorrectAnswerSelected
+        Incrament score
+3. IncorrectAnswer
+4. CheckUserAnswer
+        if user answer==correct answer
+
