@@ -9,4 +9,6 @@ User answer variable
 3. IncorrectAnswer
 4. CheckUserAnswer
         if user answer==correct answer
+5. nextQuestion
+        set user answer to none
 
