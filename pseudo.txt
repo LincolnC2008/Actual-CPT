@@ -11,4 +11,10 @@ User answer variable
         if user answer==correct answer
 5. nextQuestion
         set user answer to none
+6. getUserChoice
+        ask user to type letter
+7. displayQuestion
+        go into questions list
+        display question property from current index
+        display answerAr property
 
