@@ -9,7 +9,7 @@ def addQuestion(question, answersAr, correctAnswer):
     questions.append({"question":question, "answers":answersAr, "correctAnswer":correctAnswer, "userAnswer":""})
 
 
-def answerIsCorrect(correctAnswer):
+def answerIsCorrect(correctAnswer, userAnswer):
     if correctAnswer == userAnswer:
         return True
     else:
