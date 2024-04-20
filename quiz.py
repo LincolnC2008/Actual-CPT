@@ -48,7 +48,7 @@ def mainLoop():
   
   for currentQuestion in questions:
     print()
-    print(str(questionNumber) + ".")
+    print("Question #" + str(questionNumber), "out of", str(len(questions)) + ":")
     displayQuestion(currentQuestion)
     getUserChoice(currentQuestion)
     
@@ -63,7 +63,8 @@ def mainLoop():
     print()
     questionNumber+= 1
 
-  print("Congratulations, you have", score, "out of", len(questions), "points!")
+  print()
+  print("Congratulations, you got", score, "out of", len(questions), "correct!")
 
 print()
 mainLoop()
