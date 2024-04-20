@@ -1,20 +1,36 @@
 This project will be a quiz based on a game called "Clash Royale"
 
 1. A list dictionaries of questions and answers
-        Each dictionary will have the question, the list of answers, and the correct answer
+        Each dictionary will have the question, the list of answers, the correct answer, and stored user answer
 Store score variable
 User answer variable
 2. CorrectAnswerSelected
         Incrament score
 3. IncorrectAnswer
-4. CheckUserAnswer
-        if user answer==correct answer
-5. nextQuestion
+
+4. nextQuestion
         set user answer to none
-6. getUserChoice
+5. getUserChoice
         ask user to type letter
-7. displayQuestion
+        Store user answer
+          
+6. displayQuestion
         go into questions list
         display question property from current index
         display answerAr property
 
+7. answerIsCorrect
+      Use conditionals to compare "correctAnswer" with "userChoice" 
+
+
+8. mainLoop
+
+    Using iteration:
+        Step 1: Add questions to "questions" list
+
+    Using iteration:
+        Step 2: Call displayQuestion()
+        
+        Step 3: Call getUserChoice()
+        
+        Step 4: Call answerIsCorrect()
