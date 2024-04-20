@@ -11,7 +11,16 @@ def answerIsCorrect(correctAnswer, userAnswer):
         return False
 
 def getUserChoice(currentQuestion):
-    currentQuestion["userAnswer"] = input("Please select either a, b, or c: ")
+    choiceIsValid = False
+    userAnswer = input("Please select either a, b, or c: ")
+      
+    while not choiceIsValid:
+      if userAnswer =="a" or userAnswer =="b" or userAnswer =="c":
+        choiceIsValid = True
+      else:
+        userAnswer = input("Invalid choice, please select either a, b, or c: ")
+  
+    currentQuestion["userAnswer"] = userAnswer
 
 
 def displayQuestion(currentQuestion):
