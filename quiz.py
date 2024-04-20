@@ -12,7 +12,7 @@ def answerIsCorrect(correctAnswer, userAnswer):
 
 def getUserChoice(currentQuestion):
     choiceIsValid = False
-    userAnswer = input("Please select either a, b, or c: ")
+    userAnswer = input("Please select either a, b, or c: ").lower()
       
     while not choiceIsValid:
       if userAnswer =="a" or userAnswer =="b" or userAnswer =="c":
