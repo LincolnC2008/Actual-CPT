@@ -33,6 +33,18 @@ def mainLoop():
   addQuestion("Which of these SDGs have we made the most progress to?", ["a: SDG 9", "b: SDG 2", "c: SDG 7"], "a")
   addQuestion("Which of these SDGs have we made the least progress to?", ["a: SDG 7", "b: SDG 9", "c: SDG 2"], "c")
   
+  
+  print("Welcome to the UN SDG quiz!")
+  print()
+  print("Instructions on how to play: ")
+  print()
+  print("You will be given a series of multiple choice questions based on the UN SDGs. You will also be given a series of answer choices: a, b, and c. ")
+  print()
+  print("To select your answer to the question, please type the letter corresponding to your answer choice after the prompted statement 'Please select either a, b, or c:'.")
+
+  print()
+  print()
+  
   for currentQuestion in questions:
     displayQuestion(currentQuestion)
     getUserChoice(currentQuestion)
