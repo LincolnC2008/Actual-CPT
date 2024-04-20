@@ -22,8 +22,11 @@ User answer variable
 7. answerIsCorrect
       Use conditionals to compare "correctAnswer" with "userChoice" 
 
+8. userAnswerIsValid
+      while userAnswer doesn't = a, b, or c:
+          Prompt the user to type answer again
 
-8. mainLoop
+9. mainLoop
 
     Using iteration:
         Step 1: Add questions to "questions" list
@@ -34,3 +37,22 @@ User answer variable
         Step 3: Call getUserChoice()
         
         Step 4: Call answerIsCorrect()
+
+10. Potential multiple answer feature:
+
+        Implement multiple answer selections:
+        Store "answerCount" for each question to determine how many answers the user needs to give
+
+        In getUserChoice(), you prompt the user for multiple answers based off "answerCount"
+
+            Store userAnswers in a list
+
+
+        For checking the user answers being correct:
+          Use a loop to compare each correct answer to each user answer
+
+            If there are no matches
+              The userAnswer is wrong
+            Else 
+            (if there is a match for each userAnswer)
+              The userAnswer is correct
