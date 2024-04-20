@@ -25,12 +25,17 @@ def displayQuestion(currentQuestion):
     for i in range(len(currentQuestion["answers"])):
         print(currentQuestion["answers"][i])
     print()
-
-addQuestion("What is Clash Royale?", ["a: A game", "b: A book", "c: A car"], "a")
-
-displayQuestion(0)
-getUserChoice(questions[0])
-
-
+    
+def mainLoop():
+  addQuestion("What is Clash Royale?", ["a: A game", "b: A book", "c: A car"], "a")
+  addQuestion("How old is Clash Royale?", ["a: 54 years", "b: 2 years", "c: 8 years"], "c")
+  addQuestion("Where is Clash Royale played on?", ["a: Computer", "b: Mobile", "c: Console"], "b")
+  
+  for currentQuestion in questions:
+    displayQuestion(currentQuestion)
+    getUserChoice(currentQuestion)
+    print(answerIsCorrect(currentQuestion["correctAnswer"], currentQuestion["userAnswer"]))
+    print()
 
 print()
+mainLoop()
