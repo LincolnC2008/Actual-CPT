@@ -31,7 +31,7 @@ def mainLoop():
   addQuestion("How many countries, of the 197, are participating in the completion of the SDGs?", ["a: 197", "b: 193", "c: 177"], "b")
   addQuestion("What does SDG stand for?", ["a: Sustainable Development Goal", "b: Sustainable Devotion Goal", "c: Solving Difficulties Goal"], "a")
   addQuestion("Which of these SDGs have we made the most progress to?", ["a: SDG 9", "b: SDG 2", "c: SDG 7"], "a")
-  addQuestion("Which of these SDGs have we made the most progress to?", ["a: SDG 7", "b: SDG 9", "c: SDG 2"], "c")
+  addQuestion("Which of these SDGs have we made the least progress to?", ["a: SDG 7", "b: SDG 9", "c: SDG 2"], "c")
   
   for currentQuestion in questions:
     displayQuestion(currentQuestion)
