@@ -22,6 +22,7 @@ def displayQuestion(currentQuestion):
     
 def mainLoop():
   score = 0
+  questionNumber = 1
   addQuestion("What are the UN SDGs?", ["a: A set of Goals to help improve the world.", "b: A book wirtten UN members", "c: A singular goal developed by the United States"], "a")
   addQuestion("When were these goals made?", ["a: 2012", "b: 1994", "c: 2015"], "c")
   addQuestion("How many SDGs are there?", ["a: 100", "b: 17", "c: 9"], "b")
@@ -46,6 +47,8 @@ def mainLoop():
   print()
   
   for currentQuestion in questions:
+    print()
+    print(str(questionNumber) + ".")
     displayQuestion(currentQuestion)
     getUserChoice(currentQuestion)
     
@@ -58,6 +61,7 @@ def mainLoop():
       print("The correct answer is", currentQuestion["correctAnswer"])
     
     print()
+    questionNumber+= 1
 
   print("Congratulations, you have", score, "out of", len(questions), "points!")
 
