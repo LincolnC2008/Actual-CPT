@@ -34,7 +34,14 @@ def mainLoop():
   for currentQuestion in questions:
     displayQuestion(currentQuestion)
     getUserChoice(currentQuestion)
-    print(answerIsCorrect(currentQuestion["correctAnswer"], currentQuestion["userAnswer"]))
+    
+    if answerIsCorrect(currentQuestion["correctAnswer"], currentQuestion["userAnswer"]):
+      print("That's correct!")
+
+    else:
+      print("That's incorrect!")
+      print("The correct answer is", currentQuestion["correctAnswer"])
+    
     print()
 
 print()
