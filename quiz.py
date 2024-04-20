@@ -1,6 +1,5 @@
 questions = []
 # userAnswer = None
-score = 0
 # currentQuestion = None
 
 
@@ -27,6 +26,7 @@ def displayQuestion(currentQuestion):
     print()
     
 def mainLoop():
+  score = 0
   addQuestion("What is Clash Royale?", ["a: A game", "b: A book", "c: A car"], "a")
   addQuestion("How old is Clash Royale?", ["a: 54 years", "b: 2 years", "c: 8 years"], "c")
   addQuestion("Where is Clash Royale played on?", ["a: Computer", "b: Mobile", "c: Console"], "b")
@@ -37,12 +37,15 @@ def mainLoop():
     
     if answerIsCorrect(currentQuestion["correctAnswer"], currentQuestion["userAnswer"]):
       print("That's correct!")
+      score+=1
 
     else:
       print("That's incorrect!")
       print("The correct answer is", currentQuestion["correctAnswer"])
     
     print()
+
+  print("Congratulations, you have", score, "points!")
 
 print()
 mainLoop()
