@@ -20,8 +20,7 @@ def getUserChoice(currentQuestion):
     currentQuestion["userAnswer"] = input("Please select either a, b, or c: ")
 
 
-def displayQuestion(questionIndex):
-    currentQuestion = questions[questionIndex]
+def displayQuestion(currentQuestion):
     print(currentQuestion["question"])
     for i in range(len(currentQuestion["answers"])):
         print(currentQuestion["answers"][i])
